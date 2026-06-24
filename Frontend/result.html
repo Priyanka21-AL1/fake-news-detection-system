@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Prediction Result</h1>
+
+        <div class="result-card">
+
+            <h3>News Text</h3>
+            <p id="newsText"></p>
+
+            <hr>
+
+            <h3>Prediction</h3>
+            <p id="prediction"></p>
+
+            <hr>
+
+            <h3>Confidence</h3>
+            <p id="confidence"></p>
+
+        </div>
+
+        <br>
+
+        <button onclick="goBack()">
+            Check Another News
+        </button>
+
+        <button onclick="window.location.href='history.html'">
+    View History
+</button>
+
+    </div>
+
+    <script src="js/result.js"></script>
+
+</body>
+</html>

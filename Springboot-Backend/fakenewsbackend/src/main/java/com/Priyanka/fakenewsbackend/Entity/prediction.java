@@ -6,14 +6,13 @@ import lombok.Data;
 @Entity
 @Table(name = "predictions")
 @Data
+public class Prediction {
 
-
-public class prediction {
-     @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(columnDefinition = "TEXT")
+    @Column(name = "input_text", columnDefinition = "TEXT")
     private String inputText;
 
     private String prediction;

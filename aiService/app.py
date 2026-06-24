@@ -1,5 +1,3 @@
-# app.py
-
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
@@ -10,7 +8,6 @@ vectorizer = joblib.load("model/vectorizer.pkl")
 
 app = FastAPI()
 
-# Request Body
 class NewsRequest(BaseModel):
     text: str
 
@@ -32,9 +29,9 @@ def predict(news: NewsRequest):
         2
     )
 
-    result = "Fake" if prediction == 0 else "Real"
+    result = "FAKE" if prediction == 0 else "REAL"
 
     return {
         "prediction": result,
-        "confidence": f"{confidence}%"
+        "confidence": confidence
     }
