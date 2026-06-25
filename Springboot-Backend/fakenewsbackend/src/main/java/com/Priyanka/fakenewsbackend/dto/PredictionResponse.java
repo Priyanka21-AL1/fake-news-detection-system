@@ -3,7 +3,7 @@ package com.Priyanka.fakenewsbackend.dto;
 public class PredictionResponse {
 
     private String prediction;
-    private Double confidence;
+    private double confidence;
 
     public String getPrediction() {
         return prediction;
@@ -13,11 +13,11 @@ public class PredictionResponse {
         this.prediction = prediction;
     }
 
-    public Double getConfidence() {
+    public double getConfidence() {
         return confidence;
     }
 
-    public void setConfidence(Double confidence) {
+    public void setConfidence(double confidence) {
         this.confidence = confidence;
     }
 }
